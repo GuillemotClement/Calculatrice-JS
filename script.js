@@ -1,30 +1,11 @@
 // MENU CHOIX CALCUL
 // BOUCLE VERIF CHOIX USER
+//CREATION DE LA VARIABLE CHOIX QUI CONTIENT LE CHOIX DE CALCUL DE L'USER
+let choix;
+        
+//BOUCLE DO WHILE POUR VERIFIER QUE LA SAISIS DE L'USER EST CONFORME AUX ATTENTES
 do {
-    switch (choix) {
-        case 1:
-            alert("Vous avez choisis l'addition.");
-            break;
-        case 2:
-            alert("Vous avez choisis la soustraction.");
-            break;
-        case 3:
-            alert("vous avez choisis la multiplication.");
-            break;
-        case 4:
-            alert("vous avez choisis la division");
-            break;
-        
-    }
-        
-    let info = ""
-} 
-
-
-
-
-let choix = prompt("Quel calcul souhaitez-vous realiser ?\n1 - Addition\n 2 - soustraction\n 3 - Multiplication\n 4 - Division");
-        
-        
+    choix = prompt("Saisir l'opération souhaitée :\n\n1 - Addition\n2 - Soustraction\n3-Multiplication\n4 - Division");
+}  while(choix != 1 && choix != 2 && choix != 3 && choix != 4);      
         
         
